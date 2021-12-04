@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/Calculator.css" rel="stylesheet">
+</head>
+<body>
+    <div class= "calculator-section">
+        <div class="calculator-head">
+            <h3>Arithmetic calculator</h3>
+        </div>
+        <div class="text-delete-section">
+            <input class="text-input"type="text" value="" id="input-text" placeholder="Enter num.... at here to cal....">
+            <input onclick="Delete();Del_alt()" class="delete-input" type="button" value="Delete">
+        </div>
+        <div class="button-section">
+            <div>
+                <input onclick="button_('1')" type="button" value="1">
+                <input onclick="button_('2')" type="button" value="2">
+                <input onclick="button_('3')" type="button" value="3">
+                <input onclick="button_('4')" type="button" value="4">
+            </div>
+            <div>
+                <input onclick="button_('5')" type="button" value="5">
+                <input onclick="button_('6')" type="button" value="6">
+                <input onclick="button_('7')" type="button" value="7">
+                <input onclick="button_('8')" type="button" value="8">
+            </div>
+            <div>
+                <input onclick="button_('9')" type="button" value="9">
+                <input onclick="button_('0')" type="button" value="0">
+                <input onclick="button_('+')" type="button" value="+">
+                <input onclick="button_('-')" type="button" value="-">
+            </div>
+            <div>
+                <input onclick="button_('*')" type="button" value="*">
+                <input onclick="button_('/')" type="button" value="/">
+                <input onclick="equal();ans_alt()" type="button" value="=">
+                <input onclick="button_('.')" type="button" value=".">
+            </div>
+        </div>        
+    </div>
+    <script src="js/Calculator.js"></script>
+</body>
+</html>
